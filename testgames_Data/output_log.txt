@@ -1,0 +1,633 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   20.19.15.4549
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\unity\New Unity Project\testgames_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\unity\New Unity Project\testgames_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\unity\New Unity Project\testgames_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\unity\New Unity Project\testgames_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\unity\New Unity Project\testgames_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\unity\New Unity Project\testgames_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\unity\New Unity Project\testgames_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\unity\New Unity Project\testgames_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\unity\New Unity Project\testgames_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\unity\New Unity Project\testgames_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  1.440 seconds
+Platform assembly: D:\unity\New Unity Project\testgames_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\unity\New Unity Project\testgames_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.070205 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2a20 -> priority: 1 
+  Thread -> id: 1d2c -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 21.704487 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2406.
+Total: 2.424005 ms (FindLiveObjects: 0.323974 ms CreateObjectMapping: 0.223122 ms MarkObjects: 1.829606 ms  DeleteObjects: 0.045517 ms)
+
+The prefab 'PlayerMagic_verNET' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+hi!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+crea
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:50746}
+ServerDisconnected due to error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.CallCmdCreateCube (UnityEngine.GameObject nanika, Single dis) [0x00000] in <filename unknown>:0 
+  at NETEnemySystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
