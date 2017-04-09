@@ -5,16 +5,17 @@ using UnityEngine;
 public class NETAnimationCtrl : MonoBehaviour
 {
     public NETShootbullet Shooter;
-    private Animator anim;
+    public Animator anim;
     // Use this for initialization
     void Start()
     {
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
 
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow) ||
             Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))//移動中

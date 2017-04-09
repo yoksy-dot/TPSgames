@@ -96,7 +96,9 @@
     <Compile Include="Assets\Script\Net\NETEnemySystem.cs" />
     <Compile Include="Assets\Script\Net\NETPauseSystem.cs" />
     <Compile Include="Assets\Script\Net\NETPlayerCtrl.cs" />
+    <Compile Include="Assets\Script\Net\NETShootBulletAuto.cs" />
     <Compile Include="Assets\Script\Net\NETShootbullet.cs" />
+    <Compile Include="Assets\Script\Net\NETSideAttackSystem.cs" />
     <Compile Include="Assets\Script\Net\NetPlayerData.cs" />
     <Compile Include="Assets\Script\Net\NetWorkManagerCustom.cs" />
     <Compile Include="Assets\Script\Net\netBreakParent.cs" />

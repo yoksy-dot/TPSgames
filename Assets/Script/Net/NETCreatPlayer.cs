@@ -11,9 +11,9 @@ public class NETCreatPlayer : NetworkBehaviour
 
     public bool makingCP = false;
 
-    private GameObject Player, Center,ChengeCenter;
-    private GameObject childObject;
-    private GameObject FuncCenterPoint;
+    private GameObject Player, Center/*,ChengeCenter*/;
+    private GameObject childObject, childObject2;
+    //private GameObject FuncCenterPoint;
     private float time = 0.0f;
     private bool First = true;
     private float mousespeed;
@@ -41,9 +41,9 @@ public class NETCreatPlayer : NetworkBehaviour
         animctrl = gameObject.GetComponent<NETAnimationCtrl>();
         Cursor.visible = false;//カーソルを非表示にする
 
-        CmdMakeCnter();
+        //CmdMakeCnter();
         //PlayerMaker(NUM);
-        Debug.Log("hi!");
+        //Debug.Log("hi!");
         makingCP = false;
     }
 
@@ -72,7 +72,7 @@ public class NETCreatPlayer : NetworkBehaviour
 
         if (First)
         {
-            CmdMakeCnter();
+            //CmdMakeCnter();
             PlayerMaker(NUM);
             First = false;
         }
@@ -108,16 +108,19 @@ public class NETCreatPlayer : NetworkBehaviour
                 //Player = (GameObject)Instantiate(Char0, transform.position, transform.rotation);
                 //NetworkServer.Spawn(Player);
                 Player = Char0;
-                childObject = Player.gameObject.transform.FindChild("wepon_rendo/shootbullet1").gameObject;
-                Data = Player.GetComponent<NetPlayerData>();//直下になる
+                childObject = Player.gameObject.transform.FindChild("Player").gameObject;
+                childObject2 = childObject.gameObject.transform.FindChild("wepon_rendo/shootbullet1").gameObject;
+                Data = childObject.GetComponent<NetPlayerData>();//直下になる
                 break;
             case 1:
-                //Player = (GameObject)Instantiate(Char1, transform.position, transform.rotation);//プレイヤー作成
-                //NetworkServer.Spawn(Player);
+                //Player = Char1;
+                //childObject = Player.gameObject.transform.FindChild("weapon/shootbullet1").gameObject;
+                //Data = Player.GetComponent<NetPlayerData>();
+
                 Player = Char1;
-                //childObject = Player.gameObject.transform.FindChild("PlayerMagic_verNET").gameObject;//今までのchar
-                childObject = Player.gameObject.transform.FindChild("weapon/shootbullet1").gameObject;
-                Data = Player.GetComponent<NetPlayerData>();
+                childObject = Player.gameObject.transform.FindChild("Player").gameObject;
+                childObject2 = childObject.gameObject.transform.FindChild("weapon/shootbullet1").gameObject;
+                Data = childObject.GetComponent<NetPlayerData>();
                 break;
             case 2:
                 //Player = (GameObject)Instantiate(Char2, transform.position, transform.rotation);
@@ -148,30 +151,23 @@ public class NETCreatPlayer : NetworkBehaviour
                 Data = Player.GetComponent<NetPlayerData>();
                 break;
         }
-        bulletnum = childObject.GetComponent<NETShootbullet>();
+        bulletnum = Player.GetComponent<NETShootbullet>();
         /*MMOCtrl関係*/
         ctrl = Player.GetComponent<NETPlayerCtrl>();
-        //Center = FindCenterPoint();
-        //if (Center == null)
-        //{
-        //    Debug.Log("ddd");
-        //    //makingCP = true;
-        //    //Center = ChengeCenter;
-        //    Debug.Log(ctrl.name);
-        //}
-        Debug.Log("crea");
-        ctrl.centerPoint = Center.transform;
-        ctrl.Playercm = Center.transform.FindChild("Camera");
-        ctrl.mouseSmooth = mousespeed;
+        
+        
+        //ctrl.centerPoint = Center.transform;
+        //ctrl.Playercm = Center.transform.FindChild("Camera");
+        //ctrl.mouseSmooth = mousespeed;
         /*ポーズ*/
         Pause.mmo = ctrl;
         /*GunCtrl*/
-        childObject.GetComponent<GunCtrl>().TaregetPonint = Center.transform.FindChild("TaregetPoint");
+        Player.GetComponent<GunCtrl>().TaregetPonint = Player.transform.FindChild("NETCenterPoint/TaregetPoint");
         /*SetUp関係*/
-        setup = Player.GetComponent<netPlayerSetUp>();
-        setup.maincamera = ctrl.Playercm.GetComponent<Camera>();
-        setup.audioListener = ctrl.Playercm.GetComponent<AudioListener>();
-        setup.reder = ctrl.centerPoint.GetComponentInChildren<SpriteRenderer>();
+        //setup = childObject.GetComponent<netPlayerSetUp>();
+        //setup.maincamera = ctrl.Playercm.GetComponent<Camera>();
+        //setup.audioListener = ctrl.Playercm.GetComponent<AudioListener>();
+        //setup.reder = ctrl.centerPoint.GetComponentInChildren<SpriteRenderer>();
         /*PlayerPrefabs代入*/
         netmane.playerPrefab = Player;
         /*UI*/
@@ -204,13 +200,5 @@ public class NETCreatPlayer : NetworkBehaviour
         //NetWorkManagerCustomにもある
     }
 
-    //public void OnServerConnect(NetworkConnection conn)
-    //{
-    //    //NetworkManager mane = new 
-    //    Debug.Log("asd");
-    //}
-    //public void OnClientConnect(NetworkConnection conn)
-    //{
-    //    Debug.Log("aaa");
-    //}
+
 }

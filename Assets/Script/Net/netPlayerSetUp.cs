@@ -6,21 +6,22 @@ using UnityEngine;
 public class netPlayerSetUp : NetworkBehaviour
 {
 
-
+    public CharacterController charctrl;
+    public NETPlayerCtrl playerctrl;
     public Camera maincamera;
     public AudioListener audioListener;
     public SpriteRenderer reder;
-    [SerializeField]
-    NETShootbullet shooter;
-    [SerializeField]
-    GunCtrl gun;
+    public NETShootbullet shooter;
+    public GunCtrl gun;
+    public Animator anim;
+    public NETAnimationCtrl animctrl;
 
     // Use this for initialization
     void Start () {
         if (isLocalPlayer)//自分のやつなら
         {
-            GetComponent<CharacterController>().enabled = true;
-            GetComponent<NETPlayerCtrl>().enabled = true;
+            charctrl.enabled = true;
+            playerctrl.enabled = true;
 
             maincamera.enabled = true;
             audioListener.enabled = true;
@@ -28,6 +29,9 @@ public class netPlayerSetUp : NetworkBehaviour
 
             shooter.enabled = true;
             gun.enabled = true;
+
+            anim.enabled = true;
+            animctrl.enabled = true;
         }
 
     }

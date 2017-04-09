@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GunCtrl : MonoBehaviour {
 
-	public Transform TaregetPonint;
+	public Transform ShootPoint,TaregetPonint;
 	private Transform itizi;
 	// Use this for initialization
 	void Start () {
@@ -14,7 +14,7 @@ public class GunCtrl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.LookAt(TaregetPonint);
+        ShootPoint.transform.LookAt(TaregetPonint);
 		//打つ方向に向けるだけのスクリプト
 	}
 

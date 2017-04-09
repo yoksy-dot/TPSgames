@@ -42,7 +42,7 @@ public class NetPlayerData : MonoBehaviour
         ForUI.SetUISysytem("Canvas/HPBarUI", HP, HP);//HP初期化
         ForUI.SetUISysytem("Canvas/ExpBarUI", 100, 0);//経験値?初期化
 
-        sss = gameObject.GetComponentInChildren<NETShootbullet>();//あとでネット用と分けること！
+        sss = gameObject.transform.root.GetComponent<NETShootbullet>();//あとでネット用と分けること！
         sss.ShootPlayer = NUM;//射撃者ナンバー
         sss.ShootLv = Level;
 

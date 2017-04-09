@@ -7,6 +7,7 @@ public class NETShootbullet : NetworkBehaviour
 {
     /*後々rootに移してNetworkIdentity消したい*/
     public GameObject Bullet1Prefab, SpecialPrefab;
+    public Transform ShootPos;
     GameObject oyaoya;
     private bool Fire1, Fire2;
 
@@ -61,21 +62,21 @@ public class NETShootbullet : NetworkBehaviour
         nowBullet = BulletMax;
         RemainingTime = 0;
         tar = GetComponent<GunCtrl>();
-        oyaoya = gameObject.transform.root.gameObject;//Charオブジェクト情報
+        oyaoya = gameObject.transform.root.gameObject.transform.FindChild("Player").gameObject;//Charオブジェクト情報
         data = oyaoya.GetComponent<NetPlayerData>();//上のコンポーネント
 
         //速度変化用コンポーネント
-        sss = oyaoya.GetComponentInChildren<NETPlayerCtrl>();
+        sss = GetComponent<NETPlayerCtrl>();
         beforespeed = sss.moveSpeed;
     }
 
     void Update()
     {
-        
-        //if (!isLocalPlayer)
-        //{
-        //    return;
-        //}
+
+        if (!isLocalPlayer)
+        {
+            return;
+        }
         time3 += Time.deltaTime;
         time2 += Time.deltaTime;
         time += Time.deltaTime;
@@ -126,7 +127,7 @@ public class NETShootbullet : NetworkBehaviour
         else if ((Input.GetButton("Fire2") || Input.GetMouseButton(1)) && time2 >= interval2 && UseFire2 && nowSP >= 1 && sss.CanMove)
         //必殺枠(右クリック)
         {
-            Debug.Log("fire2");
+            //Debug.Log("fire2");
             Fire2 = true;
             nowSP--;
             SpON = true;
@@ -194,14 +195,14 @@ public class NETShootbullet : NetworkBehaviour
     void CmdSPATK()
     {
         //スペシャル用switch文
-        GameObject Special = (GameObject)Instantiate(SpecialPrefab, transform.position, transform.rotation);//ここでパーティクル等を
+        GameObject Special = (GameObject)Instantiate(SpecialPrefab, ShootPos.position, ShootPos.rotation);//ここでパーティクル等を
         NetworkServer.Spawn(Special);
         switch (data.NUM)
         {
             case 0://支援範囲攻撃
                 /*効果量等は関係なし*/
                 Special.transform.localRotation = Quaternion.Euler(0, 0, 0);
-                SideAttackSystem arrow = Special.GetComponent<SideAttackSystem>();
+                NETSideAttackSystem arrow = Special.GetComponent<NETSideAttackSystem>();
                 arrow.NUM = data.NUM;
                 arrow.Lv = data.Level;
                 break;
@@ -252,9 +253,8 @@ public class NETShootbullet : NetworkBehaviour
     public void CmdShotOnly()
     //player=-1なら敵の弾
     {
-
         // プレファブから砲弾(Bullet1)オブジェクトを作成し、それをBullet1という名前の箱に入れる。
-        GameObject Bullet1 = (GameObject)Instantiate(Bullet1Prefab, transform.position, transform.rotation);
+        GameObject Bullet1 = (GameObject)Instantiate(Bullet1Prefab, ShootPos.position, ShootPos.rotation/* * oyaoya.transform.rotation * gameObject.transform.root.transform.rotation*/);
         NetworkServer.Spawn(Bullet1);
         // Rigidbodyの情報を取得し、それをBullet1Rigidbodyという名前の箱に入れる。
         Rigidbody Bullet1Rigidbody = Bullet1.GetComponent<Rigidbody>();
@@ -264,7 +264,7 @@ public class NETShootbullet : NetworkBehaviour
         BulletInfo.ShootLv = ShootLv + ExATK;
 
         // Bullet1Rigidbodyにz軸方向の力を加える。
-        Bullet1Rigidbody.AddForce(transform.forward * shotSpeed);
+        Bullet1Rigidbody.AddForce(Bullet1.transform.forward * shotSpeed);
 
     }
 }
