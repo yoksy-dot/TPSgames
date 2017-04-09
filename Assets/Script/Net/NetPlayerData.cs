@@ -82,7 +82,7 @@ public class NetPlayerData : MonoBehaviour
     {
         if (coll.gameObject.tag == "EnemyBullet")
         {
-            nowHP -= coll.gameObject.GetComponent<Bullet>().ATK;
+            nowHP -= coll.gameObject.GetComponent<NETBullet>().ATK;
 
 
         }

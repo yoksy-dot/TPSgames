@@ -96,6 +96,9 @@
     <Compile Include="Assets\Script\Net\NETEnemySystem.cs" />
     <Compile Include="Assets\Script\Net\NETPauseSystem.cs" />
     <Compile Include="Assets\Script\Net\NETPlayerCtrl.cs" />
+    <Compile Include="Assets\Script\Net\NETPlayer_ID.cs" />
+    <Compile Include="Assets\Script\Net\NETPlayer_SyncPosition.cs" />
+    <Compile Include="Assets\Script\Net\NETPlayer_SyncRotation.cs" />
     <Compile Include="Assets\Script\Net\NETShootBulletAuto.cs" />
     <Compile Include="Assets\Script\Net\NETShootbullet.cs" />
     <Compile Include="Assets\Script\Net\NETSideAttackSystem.cs" />

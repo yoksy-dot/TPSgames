@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class NETShootbullet : NetworkBehaviour
 {
-    /*後々rootに移してNetworkIdentity消したい*/
+    
+    [SyncVar]
     public GameObject Bullet1Prefab, SpecialPrefab;
     public Transform ShootPos;
     GameObject oyaoya;
@@ -191,7 +192,7 @@ public class NETShootbullet : NetworkBehaviour
         }
     }
 
-    //[Command]
+    [Command]
     void CmdSPATK()
     {
         //スペシャル用switch文
@@ -249,21 +250,22 @@ public class NETShootbullet : NetworkBehaviour
     }
 
     //弾作って飛ばすだけのスクリプト
-    //[Command]
+    [Command]
     public void CmdShotOnly()
     //player=-1なら敵の弾
     {
         // プレファブから砲弾(Bullet1)オブジェクトを作成し、それをBullet1という名前の箱に入れる。
         GameObject Bullet1 = (GameObject)Instantiate(Bullet1Prefab, ShootPos.position, ShootPos.rotation/* * oyaoya.transform.rotation * gameObject.transform.root.transform.rotation*/);
-        NetworkServer.Spawn(Bullet1);
+        
         // Rigidbodyの情報を取得し、それをBullet1Rigidbodyという名前の箱に入れる。
         Rigidbody Bullet1Rigidbody = Bullet1.GetComponent<Rigidbody>();
         /*射撃者特定用*/
-        Bullet BulletInfo = Bullet1.GetComponent<Bullet>();
+
+        NETBullet BulletInfo = Bullet1.GetComponent<NETBullet>();
         BulletInfo.ShootPlayer = ShootPlayer;
         BulletInfo.ShootLv = ShootLv + ExATK;
-
         // Bullet1Rigidbodyにz軸方向の力を加える。
+        NetworkServer.Spawn(Bullet1);
         Bullet1Rigidbody.AddForce(Bullet1.transform.forward * shotSpeed);
 
     }

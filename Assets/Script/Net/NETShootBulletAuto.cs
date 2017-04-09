@@ -18,7 +18,7 @@ public class NETShootBulletAuto : NetworkBehaviour
         // Rigidbodyの情報を取得し、それをBullet1Rigidbodyという名前の箱に入れる。
         Rigidbody Bullet1Rigidbody = Bullet1.GetComponent<Rigidbody>();
         /*射撃者特定用*/
-        Bullet BulletInfo = Bullet1.GetComponent<Bullet>();
+        NETBullet BulletInfo = Bullet1.GetComponent<NETBullet>();
         BulletInfo.ShootPlayer = player;
         BulletInfo.ShootLv = Lv;
 

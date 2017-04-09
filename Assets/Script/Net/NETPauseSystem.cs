@@ -27,10 +27,10 @@ public class NETPauseSystem : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isLocalPlayer)
-        {
-            return;
-        }
+        //if (!isLocalPlayer)
+        //{
+        //    return;
+        //}
         time += Time.deltaTime;
         if (Input.GetKey(KeyCode.Escape) && time >= interval)//ESCキーを押すと
         {

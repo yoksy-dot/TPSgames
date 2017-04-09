@@ -6,12 +6,12 @@ using UnityEngine;
 public class NETCreatPlayer : NetworkBehaviour
 {
     public GameObject Char0, Char1, Char2, Char3, Char4, Char5;//キャラ用プレハブ
-    public GameObject CP;//センターポイント
+    //public GameObject CP;//センターポイント
     public NetWorkManagerCustom netmane;
 
     public bool makingCP = false;
 
-    private GameObject Player, Center/*,ChengeCenter*/;
+    private GameObject Player;
     private GameObject childObject, childObject2;
     //private GameObject FuncCenterPoint;
     private float time = 0.0f;
@@ -28,17 +28,18 @@ public class NETCreatPlayer : NetworkBehaviour
     NETPlayerCtrl ctrl;
     NETAnimationCtrl animctrl;
     netPlayerSetUp setup;
+
     // Use this for initialization
     void Start()
     {
         CreatSlider = GetComponent<UISetBullet>();
 
-        //NUM = CharacterChoice.PlayerChoice;//保存用
+        NUM = CharacterChoice.PlayerChoice;//保存用
         mousespeed = CharacterChoice.MouseSmooth;//マウス感度
         _text = GameObject.Find("Canvas/TextMes").GetComponent<TextCtrl>();//メッセージ用
 
-        Pause = gameObject.GetComponent<NETPauseSystem>();
-        animctrl = gameObject.GetComponent<NETAnimationCtrl>();
+        Pause = GetComponent<NETPauseSystem>();
+        //animctrl = GetComponent<NETAnimationCtrl>();
         Cursor.visible = false;//カーソルを非表示にする
 
         //CmdMakeCnter();
@@ -50,16 +51,6 @@ public class NETCreatPlayer : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (makingCP)
-        //{
-        //    CmdMakeCnter();
-        //    ChengeCenter = Center;
-        //    //ChengeCenter = Center.GetComponent<NETPlayerCtrl>();//普通のに
-        //    //ChengeCenter.centerPoint = Center.transform;
-        //    //ChengeCenter.Playercm = Center.transform.FindChild("Camera");
-        //    //ChengeCenter.mouseSmooth = mousespeed;
-        //    makingCP = false;
-        //}
         _text.textCtrl(0, "");//邪魔になるかも
 
         //if (!isLocalPlayer)
@@ -154,51 +145,29 @@ public class NETCreatPlayer : NetworkBehaviour
         bulletnum = Player.GetComponent<NETShootbullet>();
         /*MMOCtrl関係*/
         ctrl = Player.GetComponent<NETPlayerCtrl>();
-        
-        
-        //ctrl.centerPoint = Center.transform;
-        //ctrl.Playercm = Center.transform.FindChild("Camera");
-        //ctrl.mouseSmooth = mousespeed;
+
         /*ポーズ*/
         Pause.mmo = ctrl;
         /*GunCtrl*/
         Player.GetComponent<GunCtrl>().TaregetPonint = Player.transform.FindChild("NETCenterPoint/TaregetPoint");
         /*SetUp関係*/
-        //setup = childObject.GetComponent<netPlayerSetUp>();
-        //setup.maincamera = ctrl.Playercm.GetComponent<Camera>();
-        //setup.audioListener = ctrl.Playercm.GetComponent<AudioListener>();
-        //setup.reder = ctrl.centerPoint.GetComponentInChildren<SpriteRenderer>();
+
         /*PlayerPrefabs代入*/
         netmane.playerPrefab = Player;
         /*UI*/
         CreatSlider.SetUISysytem("Canvas/BulletBarUI1", bulletnum.BulletMax, bulletnum.BulletMax);
+        /*AnimationCtrl*/
+        animctrl = Player.GetComponent<NETAnimationCtrl>();
         _text.textCtrl(0, "GO!"); 
     }
 
-    //GameObject FindCenterPoint()
+    //[Command]
+    //public void CmdMakeCnter()
     //{
-    //    int num = 1;
-    //    for(num = 1; num < 5; num++)
-    //    {
-    //        FuncCenterPoint = GameObject.Find("NETCenterPoint"+num).gameObject;
-    //        Debug.Log(num);
-    //        if (FuncCenterPoint.GetComponent<netHowUse>().Use == false)
-    //        {
-    //            FuncCenterPoint.GetComponent<netHowUse>().Use = true;
-    //            break;
-    //        }
-    //    }
-
-    //    return FuncCenterPoint;
+    //    Center = (GameObject)Instantiate(CP, transform.position, transform.rotation);//カメラ作成
+    //    NetworkServer.Spawn(Center);
+    //    //NetWorkManagerCustomにもある
     //}
-
-    [Command]
-    public void CmdMakeCnter()
-    {
-        Center = (GameObject)Instantiate(CP, transform.position, transform.rotation);//カメラ作成
-        NetworkServer.Spawn(Center);
-        //NetWorkManagerCustomにもある
-    }
 
 
 }
