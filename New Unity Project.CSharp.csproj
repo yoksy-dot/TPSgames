@@ -103,6 +103,7 @@
     <Compile Include="Assets\Script\Net\NetWorkManagerCustom.cs" />
     <Compile Include="Assets\Script\Net\netBreakParent.cs" />
     <Compile Include="Assets\Script\Net\netHowUse.cs" />
+    <Compile Include="Assets\Script\Net\netLatencyFind.cs" />
     <Compile Include="Assets\Script\Net\netPlayerSetUp.cs" />
     <Compile Include="Assets\Script\PauseSystem.cs" />
     <Compile Include="Assets\Script\PlayerCtrl.cs" />
